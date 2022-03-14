@@ -140,7 +140,7 @@ void setup() {
 
   particleSensor.setup(ledBrightness, sampleAverage, ledMode, sampleRate, pulseWidth, adcRange); //Configure sensor with these settings
   
-  //---Esta seccion se ejecuta una sola vez al inicio del programa de ejemplo---
+  // Esta seccion se ejecuta una sola vez al inicio del programa de ejemplo---
   // Esta seccion permite realizar la obtencion de los primeros datos necesarios para el calculo del HR y SpO2  
 
   bufferLength = 100; //buffer length of 100 stores 4 seconds of samples running at 25sps
@@ -222,7 +222,7 @@ void loop() {
     timeLast = timeNow; // Actualización de seguimiento de tiempo
 
     //-----Aqui se colocan los datos del sensor a ser enviados-----
-    String cadenaValores = "{\"id\":\"Hugo\",\"HR\":\"" + String (heartRate) + "\",\"SPO2\":\"" + String(spo2) + "\"}";
+    String cadenaValores = "{\"id\":\"Armida\",\"HR\":\"" + String (heartRate) + "\",\"SPO2\":\"" + String(spo2) + "\"}";
     Serial.println (cadenaValores);
     //String cadenaValores = "valor1 " + otrostring + ", valor 2 ";
     //-----Aqui terminan la configuracion de los datos del sensor a enviar ---
