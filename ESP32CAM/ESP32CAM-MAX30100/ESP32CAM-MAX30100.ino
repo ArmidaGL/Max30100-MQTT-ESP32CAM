@@ -203,11 +203,11 @@ void loop() {
       irBuffer[i] = particleSensor.getIR();
       particleSensor.nextSample(); //We're finished with this sample so move to next sample
 
-      Serial.print(F("HR="));
-      Serial.print(heartRate, DEC);
+      //Serial.print(F("HR="));
+      //Serial.print(heartRate, DEC);
 
-      Serial.print(F(", SPO2="));
-      Serial.println(spo2, DEC);
+      //Serial.print(F(", SPO2="));
+      //Serial.println(spo2, DEC);
     }
 
     //After gathering 25 new samples recalculate HR and SP02
